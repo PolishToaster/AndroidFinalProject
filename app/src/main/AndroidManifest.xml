@@ -16,7 +16,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".OCTranspo"></activity>
+        <activity android:name=".OCTranspo"
+            android:theme="@style/Theme.AppCompat">
+        </activity>
     </application>
 
 </manifest>
