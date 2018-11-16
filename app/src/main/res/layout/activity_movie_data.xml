@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/movie_detail_title"
+        android:text="@string/movie_detail_title"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/movie_detail_title_value"
+        android:layout_alignLeft="@id/movie_detail_title"/>
+
+    <TextView
+        android:id="@+id/movie_detail_actor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/movie_detail_title"
+        android:layout_marginTop="2dp"
+        android:text="@string/movie_detail_actor" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/movie_detail_title_value"
+        android:layout_toEndOf="@id/movie_detail_actor"
+        android:id="@+id/movie_detail_actor_value"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/movie_detail_year"
+        android:text="@string/movie_detail_year"
+        android:layout_marginTop="2dp"
+        android:layout_below="@id/movie_detail_actor"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/movie_detail_year_value"
+        android:layout_toEndOf="@id/movie_detail_year"
+        android:layout_below="@id/movie_detail_actor_value"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/movie_detail_rating"
+        android:layout_below="@id/movie_detail_year"
+        android:layout_marginTop="2dp"
+        android:id="@+id/movie_detail_rating"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/movie_detail_rating"
+        android:layout_below="@id/movie_detail_year_value"
+        android:id="@+id/movie_detail_rating_value"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/movie_detail_runtime"
+        android:layout_marginTop="2dp"
+        android:layout_below="@id/movie_detail_rating"
+        android:text="@string/movie_detail_runtime"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/movie_detail_runtime_value"
+        android:layout_toEndOf="@id/movie_detail_runtime"
+        android:layout_below="@id/movie_detail_rating_value"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/movie_detail_plot"
+        android:text="@string/movie_detail_plot"
+        android:layout_marginTop="2dp"
+        android:layout_below="@id/movie_detail_runtime"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/movie_detail_plot_value"
+        android:layout_toEndOf="@id/movie_detail_plot"
+        android:layout_below="@id/movie_detail_runtime_value"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/movie_detail_url"
+        android:layout_marginTop="2dp"
+        android:text="@string/movie_detail_url"
+        android:layout_below="@id/movie_detail_plot"/>
+
+    <EditText
+        android:id="@+id/movie_detail_url_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/movie_detail_plot_value"
+        android:layout_marginStart="0dp"
+        android:layout_toEndOf="@id/movie_detail_url" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/movie_detail_save"
+        android:layout_below="@id/movie_detail_url"
+        android:text="@string/movie_detail_save"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/movie_detail_delete"
+        android:layout_below="@id/movie_detail_save"
+        android:text="@string/movie_detail_delete"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/movie_detail_cancel"
+        android:layout_below="@id/movie_detail_delete"
+        android:text="@string/movie_detail_cancel"/>
+
+</RelativeLayout>

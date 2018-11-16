@@ -1,3 +1,22 @@
 <resources>
     <string name="app_name">AndroidFinalProject</string>
+    <string name="movie_detail_title">Movie Title: </string>
+    <string name="movie_detail_actor">Main Actors:</string>
+    <string name="movie_detail_year">Year: </string>
+    <string name="movie_detail_rating">Rating: </string>
+    <string name="movie_detail_runtime">Run Time: </string>
+    <string name="movie_detail_plot">Plot: </string>
+    <string name="movie_detail_url">URL: </string>
+    <string name="movie_detail_save">Save</string>
+    <string name="movie_detail_cancel">Cancel</string>
+    <string name="movie_detail_delete">Delete</string>
+    <string name="movie_statistics_longest">Longest Run Time: </string>
+    <string name="movie_statistics_shortest">Shortest Run Time: </string>
+    <string name="movie_statistics_average">Average Run Time: </string>
+    <string name="movie_add">Add movie</string>
+    <string name="movie_statistics">View Statistics</string>
+    <string name="activity_Movie">Movie Information</string>
+    <string name="movie_import_download">DownLoad</string>
+    <string name="movie_return">Go Back</string>
+
 </resources>

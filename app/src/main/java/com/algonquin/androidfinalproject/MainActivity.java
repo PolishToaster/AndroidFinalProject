@@ -13,13 +13,22 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button startOCTranspo = (Button)findViewById(R.id.startOCTranspo);
+        Button startOCTranspo = (Button) findViewById(R.id.startOCTranspo);
         startOCTranspo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, OCTranspo.class);
                 MainActivity.this.startActivity(intent);
 
+            }
+        });
+
+        final Button movie_button = (Button) findViewById(R.id.startMovie);
+        movie_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, Movie.class);
+                startActivity(intent);
             }
         });
     }
