@@ -78,7 +78,7 @@ public class MovieImport extends Activity {
         @Override
         protected String doInBackground(String... strings) {
             try{
-                link= new URL("http://www.omdbapi.com/ ");
+                link= new URL("http://www.omdbapi.com/?apikey=6c9862c2&r=xml ");
                 HttpURLConnection connection = (HttpURLConnection)link.openConnection();
                 connection.setReadTimeout(8000);
                 connection.setConnectTimeout(10000);

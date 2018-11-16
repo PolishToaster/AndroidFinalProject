@@ -19,6 +19,10 @@
         <activity android:name=".OCTranspo"
             android:theme="@style/Theme.AppCompat">
         </activity>
+        <activity android:name=".Movie" />
+        <activity android:name=".MovieStats" />
+        <activity android:name=".MovieData"></activity>
+        <activity android:name=".MovieImport"></activity>
     </application>
 
 </manifest>
