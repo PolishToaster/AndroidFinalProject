@@ -23,12 +23,12 @@ public class MainActivity extends Activity {
             }
         });
 
-        final Button movie_button = (Button) findViewById(R.id.startMovie);
+        Button movie_button = (Button) findViewById(R.id.startMovie);
         movie_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, Movie.class);
-                startActivity(intent);
+                MainActivity.this.startActivity(intent);
             }
         });
     }
