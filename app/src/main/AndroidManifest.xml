@@ -18,10 +18,12 @@
         </activity>
         <activity
             android:name=".OCTranspo"
-            android:theme="@style/Theme.AppCompat"></activity>
+            android:theme="@style/Theme.AppCompat" />
         <activity
             android:name=".NutritionActivity"
-            android:theme="@style/Theme.AppCompat"></activity>
+            android:theme="@style/Theme.AppCompat" />
+        <activity android:name=".FavouritesPage" />
+        <activity android:name=".NutritionSearch"></activity>
     </application>
 
 </manifest>
