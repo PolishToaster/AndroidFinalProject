@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/octranspo_listview_tripDestination"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="Trip Destination: "/>
+
+    <TextView
+        android:id="@+id/octranspo_listview_longitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Longitude: "/>
+
+    <TextView
+        android:id="@+id/octranspo_listview_latitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Latitude: "/>
+
+    <TextView
+        android:id="@+id/octranspo_listview_gpsSpeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Speed: "/>
+
+    <TextView
+        android:id="@+id/octranspo_listview_tripStartTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Trip Start Time: "/>
+
+    <TextView
+        android:id="@+id/octranspo_listview_adjustedScheduleTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Arrival Time: "/>
+
+</LinearLayout>

@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">AndroidFinalProject</string>
+    <string name="octranspo_baseurl">https://api.octranspo1.com/v1.2/@</string>
 </resources>
