@@ -17,7 +17,6 @@
         android:id="@+id/octranspo_listview_expandable"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="5dp"
         app:ael_expanded="false"
         app:ael_duration="200"
         app:ael_interpolator="linear"
@@ -27,7 +26,6 @@
             android:id="@+id/octranspo_listview_expandable_gridlayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="5dp"
             android:columnCount="4">
 
         </GridLayout>

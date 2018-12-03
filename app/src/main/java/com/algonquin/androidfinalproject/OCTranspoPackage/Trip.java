@@ -3,6 +3,9 @@ package com.algonquin.androidfinalproject.OCTranspoPackage;
 import android.os.Parcel;
 import android.os.Parcelable;
 
+/**
+ * Class that represents a Trip. Stores information on each trip for a route query
+ */
 public class Trip implements Parcelable {
     private String destination;
     private String longitude;

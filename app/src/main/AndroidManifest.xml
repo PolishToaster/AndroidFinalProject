@@ -19,7 +19,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".OCTranspo"
-            android:theme="@style/Theme.AppCompat.Light">
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
         </activity>
     </application>
 

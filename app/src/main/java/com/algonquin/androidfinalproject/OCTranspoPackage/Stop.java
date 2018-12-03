@@ -2,6 +2,9 @@ package com.algonquin.androidfinalproject.OCTranspoPackage;
 
 import java.util.ArrayList;
 
+/**
+ * This class represents a stop object. It holds the stop number, description and an array list of routes for this stop
+ */
 public class Stop {
     String stopNumber;
     String stopName;

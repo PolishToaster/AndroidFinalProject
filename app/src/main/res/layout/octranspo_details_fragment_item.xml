@@ -9,36 +9,36 @@
         android:id="@+id/octranspo_listview_tripDestination"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:text="Trip Destination: "/>
+        android:text="@string/octranspo_trip_destination"/>
 
     <TextView
         android:id="@+id/octranspo_listview_longitude"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Longitude: "/>
+        android:text="@string/octranspo_longitude"/>
 
     <TextView
         android:id="@+id/octranspo_listview_latitude"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Latitude: "/>
+        android:text="@string/octranspo_latitude"/>
 
     <TextView
         android:id="@+id/octranspo_listview_gpsSpeed"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Speed: "/>
+        android:text="@string/octranspo_gps_speed"/>
 
     <TextView
         android:id="@+id/octranspo_listview_tripStartTime"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Trip Start Time: "/>
+        android:text="@string/octranspo_trip_start_time"/>
 
     <TextView
         android:id="@+id/octranspo_listview_adjustedScheduleTime"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Arrival Time: "/>
+        android:text="@string/octranspo_adjusted_schedule_time"/>
 
 </LinearLayout>
