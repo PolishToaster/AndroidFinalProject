@@ -218,7 +218,7 @@ public class OCTranspo extends AppCompatActivity {
             GridLayout gridLayout = (GridLayout) result.findViewById(R.id.octranspo_listview_expandable_gridlayout);
             for (final String route : list.get(position).getRouteList()) {
                 final Button button = new Button(getApplicationContext(), null, android.R.attr.borderlessButtonStyle);
-                button.setTextColor(R.color.primary_text_default_material_dark);
+                button.setTextColor(res.getColor(R.color.primary_text_default_material_light));
                 button.setText(route);
                 button.setPadding(5, 5, 5, 5);
                 button.setOnClickListener(new View.OnClickListener() {
@@ -552,6 +552,15 @@ public class OCTranspo extends AppCompatActivity {
                 });
                 AlertDialog alertDialog = builder.create();
                 alertDialog.show();
+                break;
+            case R.id.octranspo_load_activity_one:
+                popToast(this, "Load Nutrition Database Activity", Toast.LENGTH_LONG);
+                break;
+            case R.id.octranspo_load_activity_two:
+                popToast(this, "Load Movie Database Activity", Toast.LENGTH_LONG);
+                break;
+            case R.id.octranspo_load_activity_three:
+                popToast(this, "Load News Activity", Toast.LENGTH_LONG);
                 break;
         }
         return true;
