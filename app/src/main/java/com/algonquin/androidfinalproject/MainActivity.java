@@ -2,9 +2,12 @@ package com.algonquin.androidfinalproject;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.graphics.Movie;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+
+import com.algonquin.androidfinalproject.Movies.MovieActivity;
 
 public class MainActivity extends Activity {
 
@@ -27,7 +30,7 @@ public class MainActivity extends Activity {
         movie_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, Movie.class);
+                Intent intent = new Intent(MainActivity.this, MovieActivity.class);
                 MainActivity.this.startActivity(intent);
             }
         });

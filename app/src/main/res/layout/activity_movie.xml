@@ -1,35 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".Movies.MovieActivity"
+    android:textColor="#1c4bdb"
+    >
 
     <android.support.v7.widget.Toolbar
         android:layout_width="match_parent"
-        android:layout_height="match_parent"></android.support.v7.widget.Toolbar>
+        android:layout_height="wrap_content"
+        android:id="@+id/movieBar"
+        app:title="Movie Information"
+        android:background="#ffffff"
+        app:titleTextColor="#17e121"
+        />
 
-    <ListView
+    <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/movie_listView"></ListView>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true">
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/addMovie"
-            android:text="@string/movie_add"/>
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="12dp"
-            android:id="@+id/movie_statistics"
-            android:text="@string/movie_statistics"/>
-    </LinearLayout>
+        android:id="@+id/movieFrameLayout"
+        android:layout_below="@id/movieBar"
+        android:background="#fcfcfb"
+        >
 
 
+    </FrameLayout>
 
 </RelativeLayout>
