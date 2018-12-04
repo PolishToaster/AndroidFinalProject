@@ -4,16 +4,19 @@
 
     <item android:id="@+id/octranspo_load_activity_one"
         android:title="One"
+        android:icon="@drawable/food"
         android:orderInCategory="101"
         app:showAsAction="always"/>
 
     <item android:id="@+id/octranspo_load_activity_two"
         android:title="Two"
+        android:icon="@drawable/movie"
         android:orderInCategory="102"
         app:showAsAction="always"/>
 
     <item android:id="@+id/octranspo_load_activity_three"
         android:title="Three"
+        android:icon="@drawable/newspaper"
         android:orderInCategory="103"
         app:showAsAction="always"/>
 

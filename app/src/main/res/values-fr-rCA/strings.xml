@@ -27,7 +27,11 @@
     <string name="octranspo_trip_start_time">Heure de début du voyage: %1$s</string>
     <string name="octranspo_adjusted_schedule_time">Heure d\'arrivée estimée: %1$s minutes</string>
     <string name="octranspo_about_title">Aidez-moi</string>
-    <string name="octranspo_credit">Crédit: AAkira et son ExpandableRelativeLayouts que vous pouvez<a href="https://github.com/AAkira/ExpandableLayout">trouver ici</a></string>
+    <string name="octranspo_credit">Crédit:\n
+        &#8226; AAkira et son ExpandableRelativeLayouts que vous pouvez<a href="https://github.com/AAkira/ExpandableLayout">trouver ici</a>\n
+        &#8226; <a href="https://icons8.com">https://icons8.com</a> pour les icones</string>
+
+
     <string name="octranspo_author">Auteur: Zachary Roberts</string>
     <string name="octranspo_app_version_num">Numéro de version de l\'application: 1.0</string>
     <string name="octranspo_instruction">Instructions:\n
