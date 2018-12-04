@@ -4,12 +4,49 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".NutritionSearch">
+    tools:context=".NutritionSearch"
+    style="@style/AppTheme">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/nutritionToolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
 
     <ListView
         android:id="@+id/searchList"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/searchButtonMain"
+        android:layout_below="@+id/nutritionToolBar"/>
+
+    <Button
+        android:id="@+id/searchButtonMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:text="@string/search" />
+
+    <EditText
+        android:id="@+id/searchBoxMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true" />
+        android:layout_marginBottom="1dp"
+        android:layout_marginStart="0dp"
+        android:layout_toLeftOf="@+id/searchButtonMain"
+        android:ems="10"
+        android:text="" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="invisible"/>
+
 </RelativeLayout>

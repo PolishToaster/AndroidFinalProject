@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FavouritesPage"
-    style="@style/AppTheme">
+    tools:context=".AddMeal">
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/nutritionToolBar"
@@ -15,15 +14,23 @@
         android:layout_alignParentStart="true" />
 
     <ListView
-        android:id="@+id/favsList"
+        android:id="@+id/mealsList"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@+id/nutritionToolBar"/>
-
-    <ProgressBar
-        android:id="@+id/progressBar2"
-        style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nutritionToolBar"
+        android:layout_above="@+id/mealName"></ListView>
+    <EditText
+        android:id="@+id/mealName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"/>
+        android:ems="10"
+        android:layout_alignParentBottom="true"/>
+    <Button
+        android:id="@+id/addMealBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:text="@string/createMeal"/>
+
 </RelativeLayout>

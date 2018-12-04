@@ -2,5 +2,30 @@
     <string name="app_name">AndroidFinalProject</string>
     <string name="nutrition_favs">Favourites</string>
     <string name="search">Search</string>
+    <string name="here">You are already Here!</string>
+    <string name="about">About</string>
+    <string name="thanks">Thanks for using!</string>
+    <string name="removed">Successfully removed</string>
+    <string name="added">Successfully added to </string>
+    <string name="error">Please try again</string>
+
+    <string name="favourite">Add to Favourites</string>
+    <string name="cancel">Cancel</string>
+    <string name="unfavourite">Remove from Favourites</string>
+    <string name="delete">Delete</string>
+    <string name="deletePrompt">Type \'DELETE\' to confirm </string>
+    <string name="addMeal">Add to Meal</string>
+    <string name="total">Total Calories: </string>
+    <string name="average">Average Calories: </string>
+    <string name="max">Maximum Calories: </string>
+    <string name="min">Minimum Calories: </string>
+    <string name="enterSearch">Please enter a search term.</string>
+    <string name="aboutMsg">Version 1.0
+    By: Tyler Desjardins
+    ToolBar to Navigate, meal = "Tag", must create meal before adding items to it</string>
+    <string name="createMeal">Add Meal</string>
+    <string name="makeMeal">Make a Meal</string>
+    <string name="enterNick">Enter a Nickname: </string>
+    <string name="removeMeal">Remove Meal</string>
 
 </resources>
