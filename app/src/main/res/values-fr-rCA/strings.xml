@@ -12,7 +12,7 @@
     <string name="button_okay">Ok</string>
     <string name="stats_disp_one"><u>"Durée d'exécution la plus courte:"</u></string>
     <string name="stats_disp_two"><u>"\n\nDurée d'exécution la plus longue:"</u></string>
-    <string name="about_title">À propos de l'application</string>
+    <string name="about_title">À propos de lapplication</string>
     <string name="about_text">"Auteur: Said Zaripov\n\nProgramme de recherche dans la base de données de films\n\n\nVersion 1.0"</string>
     <string name="button_movie_done">Fait</string>
     <string name="button_view">Voir le film</string>
