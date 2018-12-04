@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">AndroidFinalProject</string>
+    <string name="movie_fav_text"><u>Films préférés</u></string>
+    <string name="query_movie_button">Rechercher un film</string>
+    <string name="movie_textEntry_hint">Entrez le nom du film</string>
+    <string name="main_movieFavButton">Liste de favoris</string>
+    <string name="icn_fav">Films préférés</string>
+    <string name="icn_home"> Accueil</string>
+    <string name="icn_help">Aide/Info</string>
+    <string name="button_okay">Ok</string>
+    <string name="stats_disp_one"><u>"Durée d'exécution la plus courte:"</u></string>
+    <string name="stats_disp_two"><u>"\n\nDurée d'exécution la plus longue:"</u></string>
+    <string name="about_title">À propos de l'application</string>
+    <string name="about_text">"Auteur: Said Zaripov\n\nProgramme de recherche dans la base de données de films\n\n\nVersion 1.0"</string>
+    <string name="button_movie_done">Fait</string>
+    <string name="button_view">Voir le film</string>
+    <string name="button_delete">Supprimer le film</string>
+    <string name="button_cancel">Annuler</string>
+    <string name="added_movie_toDB">"a été ajouté aux favoris"</string>
+    <string name="added_movieto_DB">"est déjà dans les favoris</string>
+    <string name="movie_stats">Statistiques du film</string>
+    <string name="stats_disp_three"><u>"\n\nRéalisation moyenne du film:"</u></string>
+    <string name="movie_display_title">Titre: \n</string>
+    <string name="movie_display_release">\nReleased: \n</string>
+    <string name="movie_display_rating">\nEvaluation: \n</string>
+    <string name="movie_display_runtime">\nRuntime: \n</string>
+    <string name="movie_display_plot">\nDescription: \n</string>
+    <string name="movie_display_star">\nEtoile: \n</string>
+
+
+</resources>
