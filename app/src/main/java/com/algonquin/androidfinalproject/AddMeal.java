@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.database.Cursor;
 import android.support.annotation.NonNull;
 import android.support.design.widget.Snackbar;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
@@ -30,6 +32,7 @@ public class AddMeal extends AppCompatActivity {
     private ListView mealsList;
     private NutritionDatabaseHelper db;
     private MealListAdapter adapter;
+    private boolean isWide;
 
 
     @Override
@@ -39,6 +42,7 @@ public class AddMeal extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.nutritionToolBar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayShowTitleEnabled(false);
+        isWide = (findViewById(R.id.isWide) != null);
         meals = new ArrayList<>();
         mealName = findViewById(R.id.mealName);
         mealsList = findViewById(R.id.mealsList);
@@ -58,9 +62,26 @@ public class AddMeal extends AppCompatActivity {
         });
         populateMeals();
         mealsList.setOnItemClickListener((a, b, c, d) -> {
-            Intent intent = new Intent(AddMeal.this, MealDetail.class);
-            intent.putExtra("meal", (String) mealsList.getItemAtPosition(c));
-            startActivity(intent);
+            if (!isWide) {
+                Intent intent = new Intent(AddMeal.this, MealDetail.class);
+                intent.putExtra("meal", (String) mealsList.getItemAtPosition(c));
+                intent.putExtra("isWide", false);
+                startActivityForResult(intent, 10);
+            } else {
+                Bundle bundle = new Bundle();
+                bundle.putString("meal", (String) mealsList.getItemAtPosition(c));
+                bundle.putBoolean("isWide", true);
+                MealFragment newFrag = new MealFragment();
+                newFrag.setArguments(bundle);
+
+                FragmentManager fm = getSupportFragmentManager();
+                FragmentTransaction ft = fm.beginTransaction();
+                ft.replace(R.id.mealDetails, newFrag);
+                ft.addToBackStack("does't matter");
+                ft.commit();
+
+
+            }
         });
     }
 
@@ -105,7 +126,8 @@ public class AddMeal extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    private void populateMeals(){
+    public void populateMeals(){
+        meals.clear();
         Cursor cursor = db.queryAll(db.MEAL_LIST_TABLE, new String[]{db.KEY_ID, db.MEAL});
         int mealIndex = cursor.getColumnIndex(db.MEAL);
         cursor.moveToFirst();
@@ -114,7 +136,16 @@ public class AddMeal extends AppCompatActivity {
             meals.add(meal);
             cursor.moveToNext();
         }
+        adapter.notifyDataSetChanged();
 
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        if (resultCode == 10){
+
+            populateMeals();
+        }
     }
 
     protected class MealListAdapter extends ArrayAdapter<String> {
