@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
     <string name="app_name">AndroidFinalProject</string>
     <string name="movie_fav_text"><u>Films préférés</u></string>
     <string name="query_movie_button">Rechercher un film</string>
@@ -28,6 +27,42 @@
     <string name="movie_display_runtime">\nRuntime: \n</string>
     <string name="movie_display_plot">\nDescription: \n</string>
     <string name="movie_display_star">\nEtoile: \n</string>
-
-
+    <string name="octranspo_delete_confirmation">Stop %1$s! supprimé!</string>
+    <string name="octranspo_empty_stop_error">Le numéro d\'arrêt ne doit pas être vide ou nul.</string>
+    <string name="octranspo_duplicate_stop_error">Le numéro d\'arrêt existe déjà. Impossible d\'ajouter des arrêts en double.</string>
+    <string name="octranspo_delete_stop_title">Supprimer Stop</string>
+    <string name="octranspo_delete_stop_message">Êtes-vous sûr de vouloir supprimer stop %1$s?</string>
+    <string name="octranspo_yes">Oui</string>
+    <string name="octranspo_no">Non</string>
+    <string name="octranspo_downloading_xml">Téléchargement de XML</string>
+    <string name="octranspo_loading_xml">Chargement de XML</string>
+    <string name="octranspo_parsing_xml">Analyser XML pour les données</string>
+    <string name="octranspo_no_further_trips">Il n\'y a pas de trajet pour le bus %1$s pour les 4 prochaines heures.</string>
+    <string name="octranspo_trip_data_success">Données de trajet de la route %1$s capturées!</string>
+    <string name="octranspo_saving_data">Sauvegarde des données à l\'application</string>
+    <string name="octranspo_stop_does_not_exist">L\'arrêt %1$s n\'existe pas. Ne pas ajouter à la liste.</string>
+    <string name="octranspo_stop_data_success">Nous avons ajouté l\'arrêt %1$s à la liste!</string>
+    <string name="octranspo_ioexception">Échec d\'extraction des données du serveur.</string>
+    <string name="octranspo_xmlexception">Le lecteur XML a rencontré une erreur</string>
+    <string name="octranspo_next_trip_title">Données du voyage suivant</string>
+    <string name="octranspo_stop_list_title">Liste d\'arrêt</string>
+    <string name="octranspo_add_stop">Ajouter un numéro d\'arrêt</string>
+    <string name="octranspo_trip_destination">Destination du voyage: %1$s</string>
+    <string name="octranspo_longitude">Longitude: %1$s</string>
+    <string name="octranspo_latitude">Latitude: %1$s</string>
+    <string name="octranspo_gps_speed">Vitesse: %1$s km/h</string>
+    <string name="octranspo_trip_start_time">Heure de début du voyage: %1$s</string>
+    <string name="octranspo_adjusted_schedule_time">Heure d\'arrivée estimée: %1$s minutes</string>
+    <string name="octranspo_about_title">Aidez-moi</string>
+    <string name="octranspo_credit">Crédit:\n
+        &#8226; AAkira et son ExpandableRelativeLayouts que vous pouvez<a href="https://github.com/AAkira/ExpandableLayout">trouver ici</a>\n
+        &#8226; <a href="https://icons8.com">https://icons8.com</a> pour les icones</string>
+    <string name="octranspo_author">Auteur: Zachary Roberts</string>
+    <string name="octranspo_app_version_num">Numéro de version de l\'application: 1.0</string>
+    <string name="octranspo_instruction">Instructions:\n
+            &#8226; Ajoutez les arrêts pour lesquels vous souhaitez obtenir des informations sur l\'itinéraire à l\'aide de la zone de texte située au bas de l\'écran\n
+            &#8226; Appuyez sur l\'arrêt pour développer son contenu et vous montrer quels itinéraires vous pouvez interroger\n
+            &#8226; Appuyez sur un itinéraire pour lequel vous souhaitez obtenir des informations sur le trajet.\n
+            &#8226; Appuyez longuement sur un arrêt pour le supprimer de la liste
+        </string>
 </resources>
