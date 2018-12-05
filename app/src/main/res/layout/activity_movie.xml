@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Movies.MovieActivity"
+    android:textColor="#1c4bdb"
+    >
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/movieBar"
+        app:title="Movie Information"
+        android:background="#ffffff"
+        app:titleTextColor="#17e121"
+        />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/movieFrameLayout"
+        android:layout_below="@id/movieBar"
+        android:background="#fcfcfb"
+        >
+
+
+    </FrameLayout>
+
+</RelativeLayout>
