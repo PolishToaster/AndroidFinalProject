@@ -55,6 +55,7 @@ public class FavouritesPage extends AppCompatActivity {
     private Cursor cursor;
     private boolean isWide;
     private ProgressBar pg;
+    private static Context context;
 
 
 
@@ -67,14 +68,13 @@ public class FavouritesPage extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.nutritionToolBar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayShowTitleEnabled(false);
+        FavouritesPage.context = getApplicationContext();
         isWide = (findViewById(R.id.isWide) != null);
         favs = new ArrayList<>();
         dHelp = new NutritionDatabaseHelper(this);
         pg = findViewById(R.id.progressBar2);
         pullDataFromDatabase(dHelp.FAVS_TABLE, new String[]{dHelp.FOOD_ID, dHelp.FOOD_NICK});
-        adapter = new FavouritesListAdapter(this, favs);
         list = findViewById(R.id.favsList);
-        list.setAdapter(adapter);
         list.setOnItemClickListener((parent, view, position, id) -> {
 
             if (!isWide) {
@@ -99,7 +99,6 @@ public class FavouritesPage extends AppCompatActivity {
             }
 
         });
-        adapter.notifyDataSetChanged();
 
     }
 
@@ -113,12 +112,12 @@ public class FavouritesPage extends AppCompatActivity {
 
 
 
+
     public void removeFavourite(String id){
 
         dHelp.deleteThis(id);
         favs.clear();
         pullDataFromDatabase(dHelp.FAVS_TABLE, new String[]{dHelp.FOOD_ID, dHelp.FOOD_NICK});
-        adapter.notifyDataSetChanged();
         Toast.makeText(this, R.string.removed, Toast.LENGTH_LONG).show();
     }
 
@@ -247,18 +246,30 @@ public class FavouritesPage extends AppCompatActivity {
                 cursor.moveToNext();
                 onProgressUpdate(progress);
                 progress += progress;
+                try {
+
+                    Thread.sleep(2500);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
 
             }
+
             return null;
         }
 
         @Override
         protected void onProgressUpdate(Integer... values) {
+
             pg.setProgress(values[0]);
+
         }
 
         @Override
         protected void onPostExecute(String s) {
+            adapter = new FavouritesListAdapter(FavouritesPage.this, favs);
+            list.setAdapter(adapter);
+            adapter.notifyDataSetChanged();
             pg.setVisibility(View.INVISIBLE);
         }
     }

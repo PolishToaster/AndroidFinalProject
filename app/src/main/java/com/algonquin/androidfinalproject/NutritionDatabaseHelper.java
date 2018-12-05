@@ -12,7 +12,7 @@ import java.util.HashMap;
 public class NutritionDatabaseHelper extends SQLiteOpenHelper {
 
     private static final String DATABASE_NAME = "NUTRITION_DB";
-    private static final int VERSION_NUM = 7;
+    private static final int VERSION_NUM = 8;
     private SQLiteDatabase db;
     private HashMap<String, String> favsList;
 

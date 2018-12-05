@@ -38,7 +38,6 @@ public class FoodDetailsFragment extends Fragment {
     private Button otherButton, detailsButton;
 
 
-
     public FoodDetailsFragment() {
 
     }
@@ -97,7 +96,6 @@ public class FoodDetailsFragment extends Fragment {
         if (isSearch) {
 
 
-
             detailsButton.setText(R.string.favourite);
             otherButton.setVisibility(View.GONE);
             detailsButton.setOnClickListener(v -> {
@@ -109,7 +107,7 @@ public class FoodDetailsFragment extends Fragment {
 
                 builder.setPositiveButton("OK", (d, id) -> {
                     nickname = ((EditText) dialogView.findViewById(R.id.editText)).getText().toString();
-                    if(!isWide) {
+                    if (!isWide) {
                         Intent intent = new Intent();
                         intent.putExtra("id", foodItem.getFoodId());
                         intent.putExtra("nickname", nickname);
@@ -139,41 +137,22 @@ public class FoodDetailsFragment extends Fragment {
             detailsButton.setText(R.string.unfavourite);
             detailsButton.setOnClickListener(v -> {
 
-                View dialogView = getLayoutInflater().inflate(R.layout.favourite_dialog, null);
-                AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
-                builder.setView(dialogView);
-                ((TextView) dialogView.findViewById(R.id.textView)).setText(R.string.deletePrompt);
-                builder.setTitle(R.string.unfavourite);
+                if (!isWide) {
+                    Intent intent = new Intent();
+                    intent.putExtra("id", foodItem.getFoodId());
+                    parent.setResult(13, intent);
+                    parent.finish();
 
-                builder.setPositiveButton(R.string.delete, (d, id) -> {
+                } else {
 
-                                String confirm = ((EditText) dialogView.findViewById(R.id.editText)).getText().toString();
-                    if (!isWide) {
-                                Intent intent = new Intent();
-                                if (confirm.equals("DELETE")) {
-                                    intent.putExtra("id", foodItem.getFoodId());
-                                    parent.setResult(13, intent);
-                                    parent.finish();
-                                } else {
-                                    parent.setResult(Activity.RESULT_CANCELED);
-                                    parent.finish();
-                                }
-                    } else {
-                        if (confirm.equals("DELETE")) {
-                            ((FavouritesPage) getActivity()).removeFavourite(foodItem.getFoodId());
+                    ((FavouritesPage) getActivity()).removeFavourite(foodItem.getFoodId());
 
-                            ft.remove(this);
-                            ft.commit();
-                        }
-                    }
-                    });
-                builder.setNegativeButton(R.string.cancel, (d, id1) -> {
+                    ft.remove(this);
+                    ft.commit();
 
-                });
-                AlertDialog dialog = builder.create();
-                dialog.show();
-
+                }
             });
+
             otherButton.setVisibility(View.VISIBLE);
             otherButton.setText(R.string.addMeal);
             otherButton.setOnClickListener(c -> {
@@ -190,7 +169,7 @@ public class FoodDetailsFragment extends Fragment {
                 AlertDialog dialog = builder.create();
                 dialog.show();
                 ((ListView) dialogView.findViewById(R.id.mealList)).setOnItemClickListener((p, v, position, id) -> {
-                    if (!isWide){
+                    if (!isWide) {
                         Intent intent = new Intent();
                         intent.putExtra("meal", ((ListView) dialogView.findViewById(R.id.mealList)).getItemAtPosition(position).toString());
                         intent.putExtra("food", foodItem.getFoodId());
@@ -201,7 +180,7 @@ public class FoodDetailsFragment extends Fragment {
                         parent.finish();
                     } else {
                         String[] energy = foodItem.getNutrients().get("Energy").split(" ");
-                        ((FavouritesPage)getActivity()).addToMeal(((ListView) dialogView.findViewById(R.id.mealList)).getItemAtPosition(position).toString(), foodItem.getFoodId(), Double.parseDouble(energy[0]));
+                        ((FavouritesPage) getActivity()).addToMeal(((ListView) dialogView.findViewById(R.id.mealList)).getItemAtPosition(position).toString(), foodItem.getFoodId(), Double.parseDouble(energy[0]));
                         dialog.dismiss();
                     }
 
@@ -245,7 +224,6 @@ public class FoodDetailsFragment extends Fragment {
     protected class MealListAdapter extends ArrayAdapter<String> {
 
 
-
         public MealListAdapter(Context ctx, ArrayList<String> list) {
             super(ctx, 0, list);
         }
@@ -256,7 +234,7 @@ public class FoodDetailsFragment extends Fragment {
             TextView tv = view.findViewById(R.id.mealNameText);
             tv.setText(getItem(position));
             return view;
-            }
         }
     }
+}
 

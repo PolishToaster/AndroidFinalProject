@@ -231,6 +231,7 @@ public class NutritionSearch extends AppCompatActivity {
 
                 JSONObject j = new JSONObject(result);
                 JSONArray jArray = j.getJSONArray("hints");
+                int progress = 0;
                 for (int i = 0; i < jArray.length(); i++) {
 
                     JSONObject jObj = jArray.getJSONObject(i);
@@ -254,7 +255,12 @@ public class NutritionSearch extends AppCompatActivity {
                         foods.add(foodItem);
                     }
 
-                    onProgressUpdate(100/jArray.length());
+                    onProgressUpdate(progress += 100/jArray.length());
+                    try{
+                        Thread.sleep(500);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
 
                 }
             } catch (ProtocolException e) {

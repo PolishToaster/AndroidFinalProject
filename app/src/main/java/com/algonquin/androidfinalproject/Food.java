@@ -324,6 +324,7 @@ public class Food implements Parcelable {
         protected void onPostExecute(String s) {
             renameKeys(nutrients);
             size = nutrients.size();
+
         }
     }
 }
