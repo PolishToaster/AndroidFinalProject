@@ -18,9 +18,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".OCTranspo"
-            android:theme="@style/Theme.AppCompat" />
+        <activity android:name=".OCTranspo"
+            android:theme="@style/Theme.AppCompat">
+        </activity>
         <activity
             android:name=".NutritionActivity"
             android:theme="@style/AppTheme" />
