@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:id="@+id/movieFavTitleStatic"
+        android:text="Title: "
+        android:textColor="#0a0017"
+        />
+    <TextView
+        android:id="@+id/movieFavTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/movieFavTitleStatic"
+        android:hint="title"
+        android:textColor="#091849"
+        />
+
+
+    <TextView
+        android:id="@+id/movieFavReleasedStatic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/movieFavTitleStatic"
+        android:layout_alignParentStart="true"
+        android:text="Released: "
+        android:textColor="#0a0017"
+        />
+    <TextView
+        android:id="@+id/movieFavReleased"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/movieFavTitle"
+        android:layout_toEndOf="@id/movieFavReleasedStatic"
+        android:hint="title"
+        android:textColor="#091849"
+        />
+
+    <TextView
+        android:id="@+id/movieFavRuntimeStatic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/movieFavReleasedStatic"
+        android:text="Runtime: "
+        android:textColor="#0a0017"
+        />
+    <TextView
+        android:id="@+id/movieFavRuntime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/movieFavRuntimeStatic"
+        android:layout_below="@id/movieFavReleased"
+        android:hint="title"
+        android:textColor="#091849"
+        />
+
+    <TextView
+        android:id="@+id/movieFavRatingStatic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/movieFavRuntimeStatic"
+        android:layout_alignParentStart="true"
+        android:text="Rating: "
+        android:textColor="#0a0017"
+        />
+    <TextView
+        android:id="@+id/movieFavRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/movieFavRuntime"
+        android:layout_toEndOf="@+id/movieFavRatingStatic"
+        android:hint="title"
+        android:textColor="#091849"
+        />
+
+</RelativeLayout>

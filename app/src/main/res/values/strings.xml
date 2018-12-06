@@ -28,4 +28,69 @@
     <string name="enterNick">Enter a Nickname: </string>
     <string name="removeMeal">Remove Meal</string>
 
+    <string name="movie_fav_text"><u>Favourite Movies</u></string>
+    <string name="query_movie_button">Search Movie</string>
+    <string name="movie_textEntry_hint">Enter Name of the Movie</string>
+    <string name="main_movieFavButton">Favourite List</string>
+    <string name="icn_fav">Favourite Movies</string>
+    <string name="icn_home">Home</string>
+    <string name="icn_help">Help/Info</string>
+    <string name="button_okay">Okay</string>
+    <string name="stats_disp_one"><u>"Shortest Movie Runtime: "</u></string>
+    <string name="stats_disp_two"><u>"\n\nLongest Movie Runtime: "</u></string>
+    <string name="about_title">About the Application</string>
+    <string name="about_text">"Author: Said Zaripov\n\nMovie Database Search Program\n\n\nVersion 1.0"</string>
+    <string name="button_movie_done">Done</string>
+    <string name="button_view">View Film</string>
+    <string name="button_delete">Delete FIlm</string>
+    <string name="button_cancel">Cancel</string>
+    <string name="added_movie_toDB">" has been added to favourites"</string>
+    <string name="added_movieto_DB">" is already in favourites</string>
+    <string name="movie_stats">Movie Stats</string>
+    <string name="stats_disp_three"><u>"\n\nAverage Movie Runtime: "</u></string>
+    <string name="movie_display_title">Title: \n</string>
+    <string name="movie_display_release">\nReleased: \n</string>
+    <string name="movie_display_rating">\nRating: \n</string>
+    <string name="movie_display_runtime">\nRuntime: \n</string>
+    <string name="movie_display_plot">\nDescription: \n</string>
+    <string name="movie_display_star">\nStar: \n</string>
+    <string name="octranspo_baseurl" translatable="false">https://api.octranspo1.com/v1.2/@</string>
+    <string name="octranspo_delete_confirmation">Successfully deleted stop %1$s!</string>
+    <string name="octranspo_empty_stop_error">Stop number must not be empty or null.</string>
+    <string name="octranspo_duplicate_stop_error">Stop number already exists. Cannot add duplicate stops.</string>
+    <string name="octranspo_delete_stop_title">Delete Stop</string>
+    <string name="octranspo_delete_stop_message">Are you sure you want to delete stop %1$s?</string>
+    <string name="octranspo_yes">Yes</string>
+    <string name="octranspo_no">No</string>
+    <string name="octranspo_downloading_xml">Downloading XML</string>
+    <string name="octranspo_loading_xml">Loading XML</string>
+    <string name="octranspo_parsing_xml">Parsing XML for data</string>
+    <string name="octranspo_no_further_trips">There are no trips for route %1$s within the next 4 hours.</string>
+    <string name="octranspo_trip_data_success">Successfully grabbed trip data for route %1$s!</string>
+    <string name="octranspo_saving_data">Saving data to application</string>
+    <string name="octranspo_stop_does_not_exist">Stop %1$s does not exist. Not adding to the list.</string>
+    <string name="octranspo_stop_data_success">Successfully added stop %1$s to the list!</string>
+    <string name="octranspo_ioexception">Failed to retrieve data from the server.</string>
+    <string name="octranspo_xmlexception">XML reader encountered an error</string>
+    <string name="octranspo_next_trip_title">Next Trip Data</string>
+    <string name="octranspo_stop_list_title">Stop List</string>
+    <string name="octranspo_add_stop">Add Stop Number</string>
+    <string name="octranspo_trip_destination">Trip Destination: %1$s</string>
+    <string name="octranspo_longitude">Longitude: %1$s</string>
+    <string name="octranspo_latitude">Latitude: %1$s</string>
+    <string name="octranspo_gps_speed">Speed: %1$s km/h</string>
+    <string name="octranspo_trip_start_time">Trip Start Time: %1$s</string>
+    <string name="octranspo_adjusted_schedule_time">Estimated Arrival Time: %1$s minutes</string>
+    <string name="octranspo_about_title">Help</string>
+    <string name="octranspo_credit">Credit:\n
+        &#8226; AAkira and his ExpandableRelativeLayouts which can be <a href="https://github.com/AAkira/ExpandableLayout">found here</a>\n
+        &#8226; <a href="https://icons8.com">https://icons8.com</a> for the icons</string>
+    <string name="octranspo_author">Author: Zachary Roberts</string>
+    <string name="octranspo_app_version_num">App Version Number: 1.0</string>
+    <string name="octranspo_instruction">Instructions:\n
+            &#8226; Add stops that you want to get route information from using the textbox on the bottom of the screen\n
+            &#8226; Press on the stop to expand its contents and show you what routes you can query\n
+            &#8226; Press on a route you want to get trip information about\n
+            &#8226; Long press a stop to delete it from the list
+        </string>
 </resources>
