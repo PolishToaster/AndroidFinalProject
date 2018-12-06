@@ -69,11 +69,11 @@ public class MealFragment extends Fragment {
         totalCalTV = view.findViewById(R.id.totalCal);
         totalCalTV.setText(getString(R.string.total) + String.valueOf(totalCal) + " kCal");
         avgCalTV = view.findViewById(R.id.avgCal);
-        avgCalTV.setText(getString(R.string.total) + String.valueOf(avgCal) + " kCal");
+        avgCalTV.setText(getString(R.string.average) + String.valueOf(avgCal) + " kCal");
         maxCalTV = view.findViewById(R.id.maxCal);
-        maxCalTV.setText(getString(R.string.total) + String.valueOf(maxCal) + " kCal");
+        maxCalTV.setText(getString(R.string.max) + String.valueOf(maxCal) + " kCal");
         minCalTV = view.findViewById(R.id.minCal);
-        minCalTV.setText(getString(R.string.total) + String.valueOf(minCal) + " kCal");
+        minCalTV.setText(getString(R.string.min) + String.valueOf(minCal) + " kCal");
         mealNameTV = view.findViewById(R.id.mealName);
         mealNameTV.setText(mealName);
     }
