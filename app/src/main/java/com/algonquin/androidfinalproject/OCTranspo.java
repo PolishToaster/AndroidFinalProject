@@ -8,6 +8,7 @@ import android.app.FragmentTransaction;
 import android.content.ContentValues;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.content.res.Resources;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
@@ -39,6 +40,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.algonquin.androidfinalproject.Movies.MovieActivity;
 import com.algonquin.androidfinalproject.OCTranspoPackage.Stop;
 import com.algonquin.androidfinalproject.OCTranspoPackage.Trip;
 import com.github.aakira.expandablelayout.ExpandableRelativeLayout;
@@ -557,7 +559,8 @@ public class OCTranspo extends AppCompatActivity {
                 popToast(this, "Load Nutrition Database Activity", Toast.LENGTH_LONG);
                 break;
             case R.id.octranspo_load_activity_two:
-                popToast(this, "Load Movie Database Activity", Toast.LENGTH_LONG);
+                Intent intent = new Intent(OCTranspo.this, MovieActivity.class);
+                startActivity(intent);
                 break;
             case R.id.octranspo_load_activity_three:
                 popToast(this, "Load News Activity", Toast.LENGTH_LONG);
