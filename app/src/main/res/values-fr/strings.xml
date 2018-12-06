@@ -27,5 +27,6 @@
     <string name="makeMeal">Preparez repas</string>
     <string name="enterNick">Entrez un nom: </string>
     <string name="removeMeal">Enlever Repas</string>
+    <string name="addFav">Ajouter des Favoris!</string>
 
 </resources>

@@ -27,6 +27,7 @@
     <string name="makeMeal">Make a Meal</string>
     <string name="enterNick">Enter a Nickname: </string>
     <string name="removeMeal">Remove Meal</string>
+    <string name="addFav">Add some Favourites!</string>
 
     <string name="movie_fav_text"><u>Favourite Movies</u></string>
     <string name="query_movie_button">Search Movie</string>

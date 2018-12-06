@@ -104,8 +104,14 @@ public class FavouritesPage extends AppCompatActivity {
 
     private void pullDataFromDatabase(String table, String[] columns){
 
-        PullFromDatabase aS = new PullFromDatabase(table, columns);
-        aS.execute();
+        cursor = dHelp.queryAll(table, columns);
+        if (cursor.getCount() > 0) {
+            PullFromDatabase aS = new PullFromDatabase(table, columns);
+            aS.execute();
+        } else {
+            pg.setVisibility(View.INVISIBLE);
+            Toast.makeText(this, R.string.addFav,Toast.LENGTH_LONG).show();
+        }
 
 
     }
