@@ -26,6 +26,15 @@ public class MainActivity extends Activity {
             }
         });
 
+        Button startNutrition = findViewById(R.id.startNutrition);
+        startNutrition.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, NutritionActivity.class);
+                MainActivity.this.startActivity(intent);
+            }
+        });
+
         Button movie_button = (Button) findViewById(R.id.startMovie);
         movie_button.setOnClickListener(new View.OnClickListener() {
             @Override

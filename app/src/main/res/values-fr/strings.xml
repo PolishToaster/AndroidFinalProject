@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AndroidFinalProject</string>
+    <string name="nutrition_favs">Favoris</string>
+    <string name="search">Chercher</string>
+    <string name="here">Vous etes ici!</string>
+    <string name="about">Info</string>
+    <string name="thanks">Merci pour utiliser!</string>
+    <string name="removed">Enlever</string>
+    <string name="added">Ajouter à </string>
+    <string name="error">Essayez encore</string>
+    <string name="favourite">Ajouter à Favoris</string>
+    <string name="cancel">Cancel</string>
+    <string name="unfavourite">Retirer des favoris</string>
+    <string name="delete">effacer</string>
+    <string name="deletePrompt">Type \'DELETE\' pour confirmer </string>
+    <string name="addMeal">Ajouter à repas</string>
+    <string name="total">Calorie Totale: </string>
+    <string name="average">Calories Moyenne: </string>
+    <string name="max">Calories Maximum: </string>
+    <string name="min">Calories Minimum: </string>
+    <string name="enterSearch">Entrez une terme de recherche</string>
+    <string name="aboutMsg">Version 1.0
+    Par: Tyler Desjardins
+    ToolBar to Navigate, meal = "Tag", must create meal before adding items to it</string>
+    <string name="createMeal">Ajouter repas</string>
+    <string name="makeMeal">Preparez repas</string>
+    <string name="enterNick">Entrez un nom: </string>
+    <string name="removeMeal">Enlever Repas</string>
+
+</resources>
