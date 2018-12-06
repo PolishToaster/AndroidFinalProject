@@ -538,7 +538,9 @@ public class OCTranspo extends AppCompatActivity {
      */
     public boolean onOptionsItemSelected(MenuItem mi) {
         int id = mi.getItemId();
+        Intent intent;
         switch (id) {
+
             case R.id.octranspo_action_help:
                 View view = View.inflate(this, R.layout.octranspo_about_menu_content, null);
                 AlertDialog.Builder builder = new AlertDialog.Builder(this);
@@ -556,10 +558,11 @@ public class OCTranspo extends AppCompatActivity {
                 alertDialog.show();
                 break;
             case R.id.octranspo_load_activity_one:
-                popToast(this, "Load Nutrition Database Activity", Toast.LENGTH_LONG);
+                intent = new Intent(OCTranspo.this, NutritionActivity.class);
+                startActivity(intent);
                 break;
             case R.id.octranspo_load_activity_two:
-                Intent intent = new Intent(OCTranspo.this, MovieActivity.class);
+                intent = new Intent(OCTranspo.this, MovieActivity.class);
                 startActivity(intent);
                 break;
             case R.id.octranspo_load_activity_three:
