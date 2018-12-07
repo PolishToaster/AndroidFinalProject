@@ -32,6 +32,7 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.net.URLEncoder;
 
+/* Said Zaripov*/
 public class MovieFragmentDisplay extends Fragment {
 
     private ProgressBar progressBar;

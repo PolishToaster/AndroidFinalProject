@@ -17,6 +17,7 @@ import android.widget.SimpleCursorAdapter;
 
 import com.algonquin.androidfinalproject.R;
 
+/* Said Zaripov*/
 public class MovieFragmentFav extends Fragment {
 
     private ListView favListView;

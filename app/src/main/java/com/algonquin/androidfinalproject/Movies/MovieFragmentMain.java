@@ -11,6 +11,7 @@ import android.widget.EditText;
 import com.algonquin.androidfinalproject.Movies.MovieActivity;
 import com.algonquin.androidfinalproject.R;
 
+/* Said Zaripov*/
 public class MovieFragmentMain extends Fragment {
 
     MovieActivity parent = new MovieActivity();

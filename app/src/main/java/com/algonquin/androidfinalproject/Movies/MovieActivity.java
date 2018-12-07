@@ -18,7 +18,20 @@ import com.algonquin.androidfinalproject.R;
 
 
 
+/* Said Zaripov
 
+ICONS reference
+
+home button
+<a href="https://icons8.com/icon/96939/home-button">Home Button icon by Icons8</a>
+
+about
+<a href="https://icons8.com/icon/42224/about">About icon by Icons8</a>
+
+favourite
+<a href="https://icons8.com/icon/9179/bookmark-page">Bookmark Page icon by Icons8</a>
+
+*/
 public class MovieActivity extends AppCompatActivity {
 
     protected static final String ACTIVITY_NAME = "MovieActivity";

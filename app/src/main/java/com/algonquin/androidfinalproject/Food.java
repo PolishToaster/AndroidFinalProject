@@ -25,6 +25,9 @@ import java.util.Iterator;
 
 import static java.net.URLEncoder.encode;
 
+/***
+ * Parcelable info obtained from: https://developer.android.com/reference/android/os/Parcelable
+ */
 public class Food implements Parcelable {
 
     private String foodId;
